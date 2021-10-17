@@ -50,7 +50,7 @@ body{
     width: 30px;
     height: 10px;
     border-radius: 30%;
-    background-color: rgba(255, 255, 255, 0.714);
+    background-color: rgba(255, 255, 255, 0.4);
     cursor:pointer;
     opacity: 0.7;
     transition: all .4s ease;
@@ -67,7 +67,7 @@ input:checked .bar {
 }
 .bar:hover{
     transform: scale(1.1);
-    background-color: rgb(122, 123, 128);
+    background-color: rgb(122, 123, 128, 0.3);
 }
 input[name="r"]{
     display: none;
