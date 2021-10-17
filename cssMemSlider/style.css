@@ -1,18 +1,20 @@
 body{
-    background-color: black;
+    background:url(./img/siba.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .container{
     margin-top: 10px;
 }
 .slider{
-    background-color: rgb(72, 72, 72);
-    width: 80vw;
+    background-color: rgba(27, 28, 23, 0.55);
+    width: 50vw;
     height: 75vh;
     overflow: hidden;
+    padding-bottom: 100px;
     margin:0 auto;
-    padding-bottom: 120px;
     border-radius: 5%;
-    border:20px solid  rgb(72, 72, 72);
+    border:20px solid  rgba(72, 72, 72, 0.061);
 }
 .slides{
     width: 400%;
@@ -36,6 +38,7 @@ body{
     font-size: 20px;
     color: white;
     margin-top: 20px;
+    max-width: 350px;
 }
 .navigation{
     margin-top: 30px;
@@ -47,7 +50,7 @@ body{
     width: 30px;
     height: 10px;
     border-radius: 30%;
-    background-color: rgb(45, 43, 43);
+    background-color: rgba(255, 255, 255, 0.714);
     cursor:pointer;
     opacity: 0.7;
     transition: all .4s ease;
@@ -82,10 +85,19 @@ input[name="r"]{
 #r4:checked ~ .s1 {
     margin-left: -75%;
 }
-@media (max-width:768px) {
-    .container{
-        margin-top: 0;
+@media (max-width:1024px) {
+    .slider{
+        width: 95%;
     }
+    .navigation{
+        justify-content: center;
+    }
+    .slide p {
+        margin-top: 60px;
+        font-size: 16px;
+    }
+}
+@media (max-width:768px) {
     .navigation{
         justify-content: center;
     }
